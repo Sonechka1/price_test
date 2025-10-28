@@ -43,6 +43,7 @@ body {
   align-items: center;
   --swiper-navigation-size: 24px;
   --swiper-navigation-color: #485474;
+  top: 5px;
 }
 .swiper-button-prev-price {
   position: relative;
