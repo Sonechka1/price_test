@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Certificates</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="section_title">
+            Дипломы и сертификаты
+        </h1>
+        <div class="certificates_wrapper">
+            <div class="certificates_info">
+                <p>
+                    Чтобы предлагать своим пациентам самые прогрессивные и современные решения, <span>Айкуи
+                        Корюновна</span> изучает
+                    новые методики реабилитации, углубляет свои знания, оттачивает мануальное мастерство.
+
+                </p>
+                <div class="price_navigation">
+                    <div class="swiper-button-prev swiper-button-prev-price"></div>
+                    <div class="swiper-button-next swiper-button-next-price"></div>
+                </div>
+            </div>
+
+            <div class="swiper certificates_slider">
+                <div class="swiper-wrapper slider">
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/1.png" alt="cert-1">
+                    </div>
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/2.png" alt="cert-2">
+                    </div>
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/3.png" alt="cert-3">
+                    </div>
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/1.png" alt="cert-1">
+                    </div>
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/2.png" alt="cert-2">
+                    </div>
+                    <div class="swiper-slide cert-slide">
+                        <img class="cert-slide-img" src="./assets/img/cert/3.png" alt="cert-3">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="swiper-pagination swiper-pagination-castom"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".certificates_slider", {
+            slidesPerView: 'auto',
+            spaceBetween: 32,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next-price", // исправлен селектор
+                prevEl: ".swiper-button-prev-price", // исправлен селектор
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: {
+                invert: false, // добавлен параметр для корректной прокрутки
+                sensitivity: 1, // чувствительность прокрутки
+            },
+            keyboard: true,
+           
+
+
+
+        });
+    </script>
+</body>
+
+</html>
